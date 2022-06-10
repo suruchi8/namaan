@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>BOOK APPOINTMENT</title>
+
+
+</head>
+
+<body>
+
+     <form action="book.php" method="post">
+
+        <h2>BOOK APPOINTMENT</h2>
+
+        <?php if (isset($_GET['error'])) { ?>
+
+            <p class="error"><?php echo $_GET['error']; ?></p>
+
+        <?php } ?>
+
+        <label>Full Name</label>
+
+        <input type="text" name="fullname" placeholder="Full Name"><br>
+
+        
+         <label>Phone Number</label>
+
+        <input type="Phone Number" name="phonenumber" placeholder="Phone Number"><br> 
+         <label>Date(ddmmyyyy)</label>
+
+        <input type="" name="date" placeholder="Date"><br> 
+         <label>Session(AM/PM)</label>
+
+        <input type="Session" name="session" placeholder="session"><br> 
+
+        <button type="submit">Submit</button>
+
+     </form>
+
+</body>
+
+</html>
